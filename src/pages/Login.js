@@ -80,14 +80,14 @@ const Login = () => {
               Forgot Password?
             </Link>
           </div>
-          <Link
-            to="/admin"
+          <button
+            // to="/admin"
             className="border-0 px-3 py-2 text-white fw-bold w-100 text-center text-decoration-none fs-5"
             style={{ background: "#ffd333" }}
             type="submit"
           >
             Login
-          </Link>
+          </button>
         </form>
       </div>
     </div>
