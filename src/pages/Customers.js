@@ -28,14 +28,15 @@ const Customers = () => {
     dispatch(getUsers());
   }, []);
   const customerstate = useSelector((state) => state.customer.customers);
+  console.log(customerstate)
   const data1 = [];
   for (let i = 0; i < customerstate.length; i++) {
     if (customerstate[i].role !== "admin") {
       data1.push({
         key: i + 1,
-        name: customerstate[i].firstname + " " + customerstate[i].lastname,
+        name: customerstate[i].firstName + " " + customerstate[i].lastName,
         email: customerstate[i].email,
-        mobile: customerstate[i].mobile,
+        mobile: customerstate[i].phoneNumber,
       });
     }
   }

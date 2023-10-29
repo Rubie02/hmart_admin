@@ -54,10 +54,10 @@ const Productlist = () => {
       brand: productState[i].brand,
       category: productState[i].category,
       color: productState[i].color,
-      price: `${productState[i].price}`,
+      price: `$${productState[i].price}`,
       action: (
         <>
-          <Link to="/" className=" fs-3 text-danger">
+          <Link to="/" className="fs-3 text-danger">
             <BiEdit />
           </Link>
           <Link className="ms-3 fs-3 text-danger" to="/">
@@ -67,7 +67,6 @@ const Productlist = () => {
       ),
     });
   }
-  console.log(data1);
   return (
     <div>
       <h3 className="mb-4 title">Products</h3>
