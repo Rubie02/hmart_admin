@@ -9,13 +9,13 @@ const login = async (user) => {
   return response.data;
 };
 const getOrders = async () => {
-  const response = await axios.get(`${base_url}users/getallorders`, config);
+  const response = await axios.get(`${base_url}users/orders`, config);
 
   return response.data;
 };
 const getOrder = async (id) => {
   const response = await axios.post(
-    `${base_url}users/getorderbyuser/${id}`,
+    `${base_url}users/orders/${id}`,
     "",
     config
   );

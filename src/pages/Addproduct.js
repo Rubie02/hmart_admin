@@ -97,7 +97,6 @@ const Addproduct = () => {
   });
   const handleColors = (e) => {
     setColor(e);
-    console.log(color);
   };
   return (
     <div>
